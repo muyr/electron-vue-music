@@ -2,6 +2,11 @@
 
 > An electron-vue project
 
+本项目是慕课网教程[Vue2.0开发企业级移动端音乐Web App](https://coding.imooc.com/class/107.html)的练习代码。
+不同的是，本项目是基于 Electron 框架。仅此区别而已。
+
+课程学习笔记[在此](https://muyr.github.io/electron-vue-music)
+
 #### Build Setup
 
 ``` bash
