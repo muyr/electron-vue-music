@@ -58,7 +58,9 @@
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",
-    "vuex-electron": "^1.0.0"
+    "vuex-electron": "^1.0.0",
+    "babel-runtime": "^6.26.0",
+    "fastclick": "^1.0.6"
   },
   "devDependencies": {
     "ajv": "^6.5.0",
@@ -69,6 +71,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babili-webpack-plugin": "^0.1.2",
     "cfonts": "^2.1.2",
     "chalk": "^2.4.1",
