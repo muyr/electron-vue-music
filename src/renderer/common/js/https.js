@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 export function https(url, data) {
   let param = paramConnect(data)
-  url = url + '?' + param
+  url += (url.indexOf('?') < 0 ? '?' : '&') + param
   return new Promise((resolve, reject) => {
     fetch(url).then(res => {
       resolve(res.json())
@@ -13,7 +13,8 @@ export function https(url, data) {
 function paramConnect(data) {
   let result = ''
   for (let i in data) {
-    result += `&${i}=${data[i]}`
+    let value = data[i] !== undefined ? data[i] : ''
+    result += `&${i}=${value}`
   }
   return result ? result.substring(1) : ''
 }
